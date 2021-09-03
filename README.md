@@ -3,7 +3,7 @@
 
 ## 使用方法
 ```
-bash <(curl -Lso- https://git.io/JR3Cy)
+bash <(wget -qO- https://git.io/JR3Cy)
 ```
 
 ## 节点列表
