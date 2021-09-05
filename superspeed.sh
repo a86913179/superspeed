@@ -201,7 +201,7 @@ runtest() {
 		# speed_test '26656' '黑龙江哈尔滨' '移动'
 
 		end=$(date +%s)  
-		rm -rf speedtest*
+		rm -rf speedtest* .config/ookla
 		echo "——————————————————————————————————————————————————————————"
 		time=$(( $end - $start ))
 		if [[ $time -gt 60 ]]; then
@@ -242,7 +242,7 @@ runtest() {
 		 speed_test '19076' '重庆' '电信'
 
 		end=$(date +%s)  
-		rm -rf speedtest*
+		rm -rf speedtest* .config/ookla
 		echo "——————————————————————————————————————————————————————————"
 		time=$(( $end - $start ))
 		if [[ $time -gt 60 ]]; then
@@ -286,7 +286,7 @@ runtest() {
 		 speed_test '4863' '陕西西安' '联通'
 
 		end=$(date +%s)  
-		rm -rf speedtest*
+		rm -rf speedtest* .config/ookla
 		echo "——————————————————————————————————————————————————————————"
 		time=$(( $end - $start ))
 		if [[ $time -gt 60 ]]; then
@@ -355,7 +355,7 @@ runtest() {
 		 speed_test '26656' '黑龙江哈尔滨' '移动'
 
 		end=$(date +%s)  
-		rm -rf speedtest*
+		rm -rf speedtest* .config/ookla
 		echo "——————————————————————————————————————————————————————————"
 		time=$(( $end - $start ))
 		if [[ $time -gt 60 ]]; then
@@ -380,7 +380,7 @@ runall() {
 	preinfo;
 	selecttest;
 	runtest;
-	rm -rf speedtest*
+	rm -rf speedtest* .config/ookla
 }
 
 runall
